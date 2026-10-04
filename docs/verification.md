@@ -49,3 +49,14 @@ Content source: Blog Setup & First Post assignment provided in the prior convers
 - Browser warning/error log was empty.
 - Small-screen development steps were expanded into full-width rows after visual review.
 - Text contrast checked for light and dark tokens; body text and muted labels exceed 4.5:1 on their intended backgrounds.
+
+## Animated background and typography — October 4, 2026
+
+- Production webpack build and TypeScript checks passed.
+- Home inspected at 1280px in both themes and 320px in light mode.
+- Home, Blog, and article document widths matched the 320px viewport.
+- Computed headline font was the new local headline family; article prose retained Space Grotesk.
+- Computed background animation was running with a changing transform; Pause background changed its animation-play-state to paused, Resume restored running.
+- Route navigation retained the background and its control in the shared layout.
+- Reduced-motion CSS excludes ambient animations and hides the pause control.
+- Article navigation worked, and browser warning/error logs were empty.

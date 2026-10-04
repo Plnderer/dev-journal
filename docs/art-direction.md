@@ -17,3 +17,9 @@ Research: [official Marathon website](https://www.marathonthegame.com/) and [Bun
 The journal now uses a single grid and typography system throughout Home, Blog, About, and articles. Space Grotesk supplies geometric headlines; IBM Plex Mono supplies navigation and labels. Both are self-hosted with their OFL licenses.
 
 Light mode uses true white, pale neutral panels, dark text, black links, and black lettering on lime accents. The artwork remains in its own dark frame without text laid over the subject. Dark mode uses black and charcoal, off-white text, and restrained lime accents. Mobile development controls become full-width rows.
+
+## Motion and font mix — October 4, 2026
+
+Barlow Condensed bold provides tall, compact headlines; its real bold italic supplies the outlined “INTO” and manifesto accent. Space Grotesk remains the body typeface, while IBM Plex Mono anchors interface labels. Headline fonts are self-hosted and their OFL license is included.
+
+A decorative fixed background adds a drifting grid, orbital rings, and a slow signal sweep. All motion uses CSS transforms, ignores pointer input, sits behind content, and has a pause/resume control. The pause state survives internal navigation through the shared layout. Reduced-motion disables ambient animations and hides the unnecessary pause control. Light mode uses faint neutral and olive marks; dark mode uses faint lime and gray marks.

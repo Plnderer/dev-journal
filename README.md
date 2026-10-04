@@ -71,8 +71,8 @@ The first entry follows the assignment's introduction exception: introduce yours
 
 ## Interactive experience
 
-The journal includes light/dark themes (saved locally in the browser), a moving hero with a pause control, hover feedback, journal search and category filters, reading progress, larger-text mode, copy-link feedback, and interactive development-cycle steps. All continuous and entrance animations respect the reader's reduced-motion setting. Public page text and author metadata use **Eric Reyes**.
+The journal includes light/dark themes (saved locally in the browser), a moving hero with a pause control, an animated grid/orbit background with a separate pause control, hover feedback, journal search and category filters, reading progress, larger-text mode, copy-link feedback, and interactive development-cycle steps. All continuous and entrance animations respect the reader's reduced-motion setting. Public page text and author metadata use **Eric Reyes**.
 
 ## Fonts
 
-Space Grotesk and IBM Plex Mono are served locally. Their SIL Open Font License files are included in `public/fonts/`.
+Barlow Condensed (bold and bold italic), Space Grotesk, and IBM Plex Mono are served locally. Their SIL Open Font License files are included in `public/fonts/`.
