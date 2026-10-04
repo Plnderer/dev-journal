@@ -1,6 +1,6 @@
 # Eric Reyes — Development Journal
 
-A minimal professional journal for Eric Joel Reyes Rivera, built with Next.js App Router, TypeScript, Tailwind CSS, and local Markdown. Independent of the Misfit Sanctuary codebase.
+A minimal professional journal for Eric Reyes, built with Next.js App Router, TypeScript, Tailwind CSS, and local Markdown. Independent of the Misfit Sanctuary codebase.
 
 ## Run locally
 
@@ -27,7 +27,7 @@ Create `content/posts/your-post-title.md`. Its filename becomes `/blog/your-post
 ---
 title: "A feature or problem you worked on"
 description: "A short summary for the journal index."
-author: "Eric Joel Reyes Rivera"
+author: "Eric Reyes"
 date: "2026-10-10"
 category: "Development"
 draft: false
@@ -68,3 +68,7 @@ Add `dev.misfitsanctuary.art` in this project's Vercel Settings → Domains. At 
 - Build-time Markdown only. Only publish trusted repository content.
 
 The first entry follows the assignment's introduction exception: introduce yourself, your journey, and your goals before project work begins. Future posts should discuss a specific feature or problem and solution. Review personal wording before submitting to class.
+
+## Interactive experience
+
+The journal includes light/dark themes (saved locally in the browser), a moving hero with a pause control, hover feedback, journal search and category filters, reading progress, larger-text mode, copy-link feedback, and interactive development-cycle steps. All continuous and entrance animations respect the reader's reduced-motion setting. Public page text and author metadata use **Eric Reyes**.

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { site } from "@/lib/site";
 export function Header() {
   const pathname = usePathname();
@@ -12,6 +13,7 @@ export function Header() {
         return <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined}>{item.label}</Link>;
       })}
       <a href={site.github}>GitHub <span aria-hidden="true">↗</span></a>
+      <ThemeToggle />
     </nav>
   </header>;
 }

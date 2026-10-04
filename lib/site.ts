@@ -1,7 +1,7 @@
 export const site = {
   name: "Eric Reyes — Development Journal",
-  author: "Eric Joel Reyes Rivera",
-  description: "Notes on building software, solving problems, and learning along the way. A development journal by Eric Joel Reyes Rivera.",
+  author: "Eric Reyes",
+  description: "Notes on building software, solving problems, and learning along the way. A development journal by Eric Reyes.",
   github: "https://github.com/Plnderer",
 };
 export const siteUrl = process.env.SITE_URL ||

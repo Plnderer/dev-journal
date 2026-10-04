@@ -1,12 +1,12 @@
 ---
 title: "Starting My Capstone Journey"
 description: "An introduction to who I am, what I hope to build, and why I’m documenting the process."
-author: "Eric Joel Reyes Rivera"
+author: "Eric Reyes"
 date: "2026-10-03"
 category: "Beginnings"
 draft: false
 ---
-My name is Eric Joel Reyes Rivera, and I’m studying Computer Science at Full Sail University. As I begin Project & Portfolio V, I’m starting this journal to document the next part of my development journey: taking what I’m learning and applying it to a software project with a team.
+My name is Eric Reyes, and I’m studying Computer Science at Full Sail University. As I begin Project & Portfolio V, I’m starting this journal to document the next part of my development journey: taking what I’m learning and applying it to a software project with a team.
 
 ## Where I’m starting
 
