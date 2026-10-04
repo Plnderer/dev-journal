@@ -8,9 +8,9 @@ export function Header() {
   return <header className="site-header shell">
     <Link href="/" className="brand" aria-label="Eric Reyes home"><span className="monogram" aria-hidden="true">E<span>R</span><i>↗</i></span><span>ERIC REYES<span className="brand-sub">DEVELOPMENT JOURNAL</span></span></Link>
     <nav aria-label="Main navigation" className="flex items-center gap-5 sm:gap-8">
-      {[{href:"/", label:"Home"}, {href:"/blog", label:"Blog"}, {href:"/about", label:"About"}].map(item => {
+      {[{href:"/", label:"Home"}, {href:"/blog", label:"Blog"}, {href:"/about", label:"About"}].map((item,index) => {
         const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-        return <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined}>{item.label}</Link>;
+        return <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined}><span className="nav-index" aria-hidden="true">0{index+1}</span>{item.label}</Link>;
       })}
       <a href={site.github}>GitHub <span aria-hidden="true">↗</span></a>
       <ThemeToggle />

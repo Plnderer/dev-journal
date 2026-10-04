@@ -1,8 +1,11 @@
+import localFont from "next/font/local";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { site, siteUrl } from "@/lib/site";
 import "./globals.css";
+const display = localFont({src:"../public/fonts/spacegrotesk-SpaceGrotesk[wght].ttf",variable:"--font-display",display:"swap",weight:"300 700"});
+const mono = localFont({src:"../public/fonts/ibmplexmono-IBMPlexMono-Regular.ttf",variable:"--font-mono",display:"swap",weight:"400"});
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: site.name, template: "%s | Eric Reyes" },
@@ -11,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", title: site.name, description: site.description, locale: "en_US" },
 };
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
-  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html: `try { var t = localStorage.getItem('eric-journal-theme'); document.documentElement.dataset.theme = t === 'light' || t === 'dark' ? t : 'dark'; } catch (_) { document.documentElement.dataset.theme = 'dark'; }`}} /></head><body>
+  return <html lang="en" className={`${display.variable} ${mono.variable}`} suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html: `try { var t = localStorage.getItem('eric-journal-theme'); document.documentElement.dataset.theme = t === 'light' || t === 'dark' ? t : 'dark'; } catch (_) { document.documentElement.dataset.theme = 'dark'; }`}} /></head><body>
     <a href="#main" className="skip-link">Skip to content</a>
     <Header />
     <main id="main" className="shell" tabIndex={-1}>{children}</main>

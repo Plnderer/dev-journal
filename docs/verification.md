@@ -38,3 +38,14 @@ Content source: Blog Setup & First Post assignment provided in the prior convers
 - Existing article navigation and Eric Reyes author label verified.
 - Browser warning/error log was empty during the route checks.
 - Light and dark palettes visually inspected. Hero stays dark in either theme for artwork contrast.
+
+## Cohesive light/dark redesign — October 4, 2026
+
+- Optimized webpack production build and TypeScript checks passed.
+- Desktop Home, Blog, About, and article checked in light mode; dark Home and mobile About/article also visually inspected.
+- Home, Blog, About, and article matched the 320px viewport width; article also matched 390px.
+- Artwork loaded successfully in both themes. Geometric and mono fonts loaded locally.
+- Theme switching, search empty/restored states, larger reading text, development-step captions, and motion pause/resume worked.
+- Browser warning/error log was empty.
+- Small-screen development steps were expanded into full-width rows after visual review.
+- Text contrast checked for light and dark tokens; body text and muted labels exceed 4.5:1 on their intended backgrounds.

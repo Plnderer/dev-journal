@@ -62,7 +62,7 @@ Add `dev.misfitsanctuary.art` in this project's Vercel Settings → Domains. At 
 
 - Home, Blog, About, and GitHub navigation; active page indicators and a keyboard skip link.
 - Responsive layouts with readable article typography and visible focus states.
-- First post dated October 3, 2026, with full author name and a development-cycle visual.
+- First post dated October 3, 2026, with the public author name Eric Reyes and a development-cycle visual.
 - No tracking, external font requests, CMS, or runtime content API.
 - `lib/site.ts` contains the author, GitHub profile, and URL configuration.
 - Build-time Markdown only. Only publish trusted repository content.
@@ -72,3 +72,7 @@ The first entry follows the assignment's introduction exception: introduce yours
 ## Interactive experience
 
 The journal includes light/dark themes (saved locally in the browser), a moving hero with a pause control, hover feedback, journal search and category filters, reading progress, larger-text mode, copy-link feedback, and interactive development-cycle steps. All continuous and entrance animations respect the reader's reduced-motion setting. Public page text and author metadata use **Eric Reyes**.
+
+## Fonts
+
+Space Grotesk and IBM Plex Mono are served locally. Their SIL Open Font License files are included in `public/fonts/`.
