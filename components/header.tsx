@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export function Header() {
   const pathname = usePathname();
   return <header className="site-header shell">
-    <Link href="/" className="brand" aria-label="Eric Reyes home"><span className="monogram" aria-hidden="true">er<span>.</span></span><span>ERIC REYES<span className="brand-sub">DEVELOPMENT JOURNAL</span></span></Link>
+    <Link href="/" className="brand" aria-label="Eric Reyes home"><span className="monogram" aria-hidden="true">E<span>R</span><i>↗</i></span><span>ERIC REYES<span className="brand-sub">DEVELOPMENT JOURNAL</span></span></Link>
     <nav aria-label="Main navigation" className="flex items-center gap-5 sm:gap-8">
       {[{href:"/", label:"Home"}, {href:"/blog", label:"Blog"}, {href:"/about", label:"About"}].map(item => {
         const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);

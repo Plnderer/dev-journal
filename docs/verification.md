@@ -28,3 +28,13 @@ Content source: Blog Setup & First Post assignment provided in the prior convers
 - Home and article width matched the 390px mobile viewport.
 - Browser console warning/error log was empty during interaction checks.
 - Public article HTML and metadata contain Eric Reyes; the previous full name is absent.
+
+## Signal visual redesign — October 4, 2026
+
+- Production compilation and TypeScript checks passed using `next build --webpack`; local Turbopack encountered a sandbox port-binding restriction.
+- Desktop and 390px phone home/article layouts inspected.
+- Phone document width matched viewport width; no horizontal overflow.
+- Hero image loaded, motion pause updated state, and blog search returned the matching entry.
+- Existing article navigation and Eric Reyes author label verified.
+- Browser warning/error log was empty during the route checks.
+- Light and dark palettes visually inspected. Hero stays dark in either theme for artwork contrast.

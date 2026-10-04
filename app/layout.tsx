@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", title: site.name, description: site.description, locale: "en_US" },
 };
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
-  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html: `try { var t = localStorage.getItem('eric-journal-theme'); document.documentElement.dataset.theme = t === 'light' || t === 'dark' ? t : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch (_) { document.documentElement.dataset.theme = 'light'; }`}} /></head><body>
+  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html: `try { var t = localStorage.getItem('eric-journal-theme'); document.documentElement.dataset.theme = t === 'light' || t === 'dark' ? t : 'dark'; } catch (_) { document.documentElement.dataset.theme = 'dark'; }`}} /></head><body>
     <a href="#main" className="skip-link">Skip to content</a>
     <Header />
     <main id="main" className="shell" tabIndex={-1}>{children}</main>
