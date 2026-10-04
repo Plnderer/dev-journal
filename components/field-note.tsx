@@ -14,6 +14,6 @@ export function FieldNote() {
  return <aside ref={art} onPointerMove={move} onPointerLeave={reset} className={`hero-art ${paused ? "motion-paused":""}`} aria-label="Original science-fiction journal artwork">
   <div className="hero-image"><Image src="/images/journal-signal.webp" alt="A faceless synthetic explorer against a lime disk and violet-lit monoliths" fill sizes="(max-width:760px) 100vw, 55vw" priority /></div>
   <div className="art-registration" aria-hidden="true"><span>ER—001</span><span>EXPLORATION / DEVELOPMENT</span><i/></div>
-  <div className="art-bottom"><span>INDEPENDENT BY DESIGN</span><button type="button" className="motion-button" aria-pressed={paused} onClick={()=>{setPaused(!paused);reset();}}>{paused ? "Resume motion":"Pause motion"} <span aria-hidden="true">{paused ? "▷":"Ⅱ"}</span></button></div>
+  <div className="art-bottom"><span>INDEPENDENT BY DESIGN</span><button type="button" className="motion-button" aria-label={paused ? "Resume motion" : "Pause motion"} aria-pressed={paused} onClick={()=>{setPaused(!paused);reset();}}><span aria-hidden="true">{paused ? "▷":"Ⅱ"}</span><span className="motion-label" aria-hidden="true">{paused ? "Resume motion":"Pause motion"}</span></button></div>
  </aside>;
 }

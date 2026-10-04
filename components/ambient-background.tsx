@@ -12,9 +12,9 @@ export function AmbientBackground() {
       <div className="ambient-orbit ambient-orbit-two" />
       <div className="ambient-signal" />
     </div>
-    <button className="ambient-control" type="button" aria-pressed={paused} onClick={() => setPaused(value => !value)}>
+    <button className="ambient-control" type="button" aria-label={paused ? "Resume background" : "Pause background"} aria-pressed={paused} onClick={() => setPaused(value => !value)}>
       <span aria-hidden="true">{paused ? "▷" : "Ⅱ"}</span>
-      {paused ? "Resume background" : "Pause background"}
+      <span className="motion-label" aria-hidden="true">{paused ? "Resume background" : "Pause background"}</span>
     </button>
   </>;
 }
