@@ -1,31 +1,52 @@
 ---
 title: "Starting My Capstone Journey"
-description: "An introduction to who I am, what I hope to build, and why I’m documenting the process."
+description: "What I’m studying, what I want to improve, and how I’ll keep track of the work."
 author: "Eric Reyes"
 date: "2026-10-03"
 category: "Beginnings"
 draft: false
 ---
-My name is Eric Reyes, and I’m studying Computer Science at Full Sail University. As I begin Project & Portfolio V, I’m starting this journal to document the next part of my development journey: taking what I’m learning and applying it to a software project with a team.
+My name is Eric Reyes. I’m studying Computer Science at Full Sail University. This journal is where I’ll keep track of my work in COS359, Project & Portfolio V.
 
-## Where I’m starting
+## A little about me
 
-For me, studying computer science is a step toward becoming someone who can take an idea and turn it into something useful. I’m interested in software development and artificial intelligence, but I also want to strengthen the fundamentals that make an application reliable: understanding a problem, breaking it into manageable pieces, and testing whether a solution actually works.
+I’m interested in software development and artificial intelligence (AI). I want to understand how the parts of an application work together and use that knowledge to build something useful.
 
-This course is an opportunity to connect those skills. Its focus on Agile development, individual goals, and collaboration means that the work is about more than the final application. It’s also about how we plan, communicate, respond to feedback, and improve along the way.
+Before building a feature, I need to understand what it should do. That helps me choose the tools and decide how to test the result.
 
-## What I hope to learn
+I’m still learning. This course gives me a chance to apply what I’ve learned to a project with a team and see where I need more practice.
 
-My goal is to become more confident building an application from its initial idea toward a finished product. I want to get better at making practical development decisions and explaining why I made them. That includes defining a realistic scope, choosing a useful approach, and knowing when an idea needs to change.
+## What I want to improve
 
-I also want to become a stronger teammate. Clear communication and consistent progress matter just as much as the code I contribute. I hope to use this project to practice breaking larger tasks into smaller milestones, asking questions early, and giving my team work they can build on.
+The course includes Agile development, which means working in smaller steps and using feedback to improve the next version. It also includes teamwork and taking an application from an idea toward deployment. My goals are:
 
-As I continue toward a career in software development and AI, I want to focus on technology that solves a real problem. My goal is to understand the need first and choose the tools that fit it.
+- **Planning:** Break the project into smaller tasks so I know what to work on next.
+- **Building and testing:** Make a working version, check it, and fix the problems I find.
+- **Teamwork:** Share progress, ask questions, and explain what still needs work.
 
-## Why I’m keeping this journal
+I also want to get better at explaining my choices. If I use a tool, I should be able to explain what it does and why it fits the task.
 
-A working application can show what a team created, but it doesn’t explain every decision that led there. This blog will give me a place to reflect on that process and create a record that I can share with future employers.
+## How I plan to work
 
-For now, this first entry is an introduction. In future posts, I’ll describe a specific issue or feature, explain my approach, and reflect on what worked and what I would change. When useful, I’ll include screenshots, diagrams, or code examples to make the process easier to follow.
+My process is simple:
 
-I’m looking forward to seeing how the project develops from an initial idea into something we can demonstrate. This is the starting point, and I’m ready to learn from the work ahead.
+1. Identify the problem.
+2. Try a solution.
+3. Test what happens.
+4. Make changes and test again.
+5. Write down the result and what still needs work.
+
+For example, if a feature is supposed to save information, I would check whether I can enter it, save it, and open it again. If something fails, I would narrow down which step failed before changing the code.
+
+That gives me something specific to work on. After making a change, I need to test it again to see whether it fixed the problem.
+
+## What I’ll write here
+
+This first post is an introduction. As the project develops, I’ll write about:
+
+- The problem or feature I worked on.
+- What I tried and why.
+- What worked and what failed.
+- What I changed or still need to learn.
+
+I’ll add screenshots, diagrams, or code when they help explain a step. I want someone reading this, including a future employer, to understand my contribution and how I got to the result.

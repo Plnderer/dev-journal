@@ -31,7 +31,7 @@ export function Reader({children}: {children: ReactNode}) {
     copyTimer.current = setTimeout(()=>setCopyStatus(""),3500);
   }
   return <><div className="reading-progress" aria-hidden="true"><div ref={progress}/></div>
-    <div className="reader-toolbar"><span className="eyebrow">MAKE YOURSELF COMFORTABLE</span><div className="reader-buttons"><button type="button" onClick={()=>setLarge(!large)} aria-pressed={large} aria-label="Larger reading text">Aa <span>{large ? "Standard text" : "Larger text"}</span></button><button type="button" onClick={copyLink}>Copy link <span aria-hidden="true">↗</span></button></div></div>
+    <div className="reader-toolbar"><span className="eyebrow">READING OPTIONS</span><div className="reader-buttons"><button type="button" onClick={()=>setLarge(!large)} aria-pressed={large} aria-label="Larger reading text">Aa <span>{large ? "Standard text" : "Larger text"}</span></button><button type="button" onClick={copyLink}>Copy link <span aria-hidden="true">↗</span></button></div></div>
     <p className="copy-status" role="status">{copyStatus}</p>
     <div ref={content} className={`reading-content ${large ? "large-text" : ""}`}>{children}</div>
     <button type="button" className="back-top text-link" onClick={()=>window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"})}>Back to top ↑</button>

@@ -20,5 +20,5 @@ export default async function PostPage({params}: Props) {
  {post.slug === "starting-my-capstone-journey" && <Journey />}
  <div className="prose"><Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown></div>
  </Reader>
- <div className="article-end"><p>Thanks for following the journey.</p><Link href="/blog" className="text-link">Back to all entries <span aria-hidden="true">→</span></Link></div></article>;
+ <div className="article-end"><p>More project notes in the journal.</p><Link href="/blog" className="text-link">Back to all entries <span aria-hidden="true">→</span></Link></div></article>;
 }

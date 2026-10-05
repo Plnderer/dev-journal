@@ -21,6 +21,6 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
     <AmbientBackground />
     <Header />
     <main id="main" className="shell" tabIndex={-1}>{children}</main>
-    <footer className="shell site-footer"><div><strong>Eric Reyes</strong><p>Building thoughtfully. Learning in public.</p></div><div className="flex flex-wrap gap-6"><Link href="/blog">Journal</Link><a href="https://misfitsanctuary.art">Misfit Sanctuary <span aria-hidden="true">↗</span></a></div></footer>
+    <footer className="shell site-footer"><div><strong>Eric Reyes</strong><p>Software development. Project notes.</p></div><div className="flex flex-wrap gap-6"><Link href="/blog">Journal</Link><a href="https://misfitsanctuary.art">Misfit Sanctuary <span aria-hidden="true">↗</span></a></div></footer>
   </body></html>;
 }

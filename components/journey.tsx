@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 const steps = [
-  { name:"Understand", short:"Ask better questions.", detail:"Start with the problem. Ask who needs a solution, what matters to them, and how success can be measured." },
-  { name:"Build", short:"Turn ideas into software.", detail:"Make a small, working version. Break the work into clear tasks and test the decisions as you go." },
-  { name:"Reflect", short:"Make the next version better.", detail:"Look at what worked and what didn’t. Use feedback and lessons from the process to decide the next step." },
+  { name:"Understand", short:"Identify the problem.", detail:"First, I need to know what should happen and what needs to work." },
+  { name:"Build", short:"Build and test.", detail:"I’ll work through one task at a time, then check whether it does what I expected." },
+  { name:"Reflect", short:"Review the result.", detail:"I’ll write down what worked, what failed, and what I need to try next." },
 ];
 export function Journey() {
   const [selected, setSelected] = useState(0);

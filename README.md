@@ -21,7 +21,7 @@ npm start
 
 ## Add a post
 
-Create `content/posts/your-post-title.md`. Its filename becomes `/blog/your-post-title`.
+Follow `docs/writing-style.md` for Eric’s writing voice. Create `content/posts/your-post-title.md`. Its filename becomes `/blog/your-post-title`.
 
 ```md
 ---
@@ -34,13 +34,13 @@ draft: false
 ---
 
 ## The problem
-Explain the context and what you needed to accomplish.
+What needed to work? Explain the problem in plain English.
 
 ## My approach
-Describe the alternatives, decisions, and implementation.
+What did you try, and why? List the steps when the order matters.
 
 ## Results and reflection
-Explain what you verified and what you would improve.
+What happened when you tested it? Explain what worked, what failed, and what you need to change.
 ```
 
 Dates must be quoted YYYY-MM-DD strings. Posts sort newest first. `draft: true` excludes a post from pages and the sitemap. Publication is controlled by `draft`, not a scheduled date. Missing or invalid metadata fails the build. Markdown supports headings, links, images, tables, lists, and fenced code blocks; raw HTML is not executed. Put images in `public/images/`, reference `/images/filename.png`, and include descriptive alt text.
