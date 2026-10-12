@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Markdown from "react-markdown";
@@ -6,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import { formatDate, getPost, getPosts } from "@/lib/posts";
 import { Reader } from "@/components/reader";
 import { Journey } from "@/components/journey";
+import { ProcessNavigation, StyleTileExplorer, WeekTwoCheckpoint } from "@/components/week-two-process";
 export const dynamicParams = false;
 export function generateStaticParams() { return getPosts().map(post => ({slug:post.slug})); }
 type Props = {params: Promise<{slug: string}>};
@@ -15,10 +17,27 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 }
 export default async function PostPage({params}: Props) {
  const {slug} = await params; const post = getPost(slug); if (!post) notFound();
+ const isWeekTwo = slug === "village-outreach-week-2";
+ const headingIds: Record<string, string> = {"First design document draft":"document-draft", "UX style tile":"style-tile", "Review and project setup":"team-review", "Next week":"next-week"};
  return <article className="article"><Link href="/blog" className="text-link back-link">← All entries</Link><header className="article-header"><span className="tag">{post.category}</span><h1>{post.title}</h1><p className="article-deck">{post.description}</p><div className="article-byline"><span className="avatar" aria-hidden="true">ER</span><div><span className="author">{post.author}</span><span className="muted"><time dateTime={post.date}>{formatDate(post.date)}</time> · {post.readingMinutes} min read</span></div></div></header>
  <Reader>
+ {post.cover && <figure style={{margin:"0 0 30px"}}>
+   <Image src={post.cover} alt="Illustration of a paper neighborhood surrounded by a document draft, interface sketches, and color samples on a planning worktable" width={1672} height={941} sizes="(max-width: 850px) 100vw, 800px" style={{width:"100%",height:"auto"}} />
+   <figcaption style={{fontSize:"12px",color:"var(--muted)",marginTop:"10px"}}>AI-generated editorial illustration of the planning process.</figcaption>
+ </figure>}
  {post.slug === "starting-my-capstone-journey" && <Journey />}
- <div className="prose"><Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown></div>
+ {isWeekTwo && <ProcessNavigation />}
+ <div className="prose"><Markdown remarkPlugins={[remarkGfm]} components={isWeekTwo ? {
+   h2({children}) {
+     const heading = String(children);
+     return <>
+       {heading === "Review and project setup" && <StyleTileExplorer />}
+       <h2 id={headingIds[heading]} style={{scrollMarginTop:"80px"}}>{children}</h2>
+     </>;
+   },
+ } : undefined}>{post.content}</Markdown>
+ {isWeekTwo && <WeekTwoCheckpoint />}
+ </div>
  </Reader>
  <div className="article-end"><p>More project notes in the journal.</p><Link href="/blog" className="text-link">Back to all entries <span aria-hidden="true">→</span></Link></div></article>;
 }

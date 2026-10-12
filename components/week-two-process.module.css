@@ -1,0 +1,18 @@
+.navigation{position:sticky;top:0;z-index:5;display:flex;gap:0;background:var(--paper);border-block:1px solid var(--line);margin:0 0 28px}
+.navigation a{flex:1;padding:17px 12px;text-align:center;font-size:14px;color:var(--body-ink);text-decoration:none;border-bottom:3px solid transparent}
+.navigation a[aria-current]{border-bottom-color:var(--link);color:var(--ink);font-weight:600}
+.navigation a:hover{background:var(--surface)}
+.explorer{margin:28px 0;padding:22px;background:var(--surface);border:1px solid var(--line)}
+.explorer figcaption{display:flex;flex-direction:column;gap:5px;font-size:14px;line-height:1.6;margin-bottom:18px}
+.explorer figcaption strong{font-size:21px;color:var(--ink)}
+.choices{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.choices button{border:1px solid var(--line);padding:11px 15px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;cursor:pointer;min-height:44px}
+.choices button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.detail img{display:block;width:100%;height:auto;background:#faf7f2}
+.detail p{font-size:15px;line-height:1.7;margin:16px 0}
+.explorer>a{font-size:14px}
+.checkpoint{display:grid;grid-template-columns:1fr 1fr;gap:30px;border-block:1px solid var(--line);padding:24px 0;margin:35px 0}
+.checkpoint h3{font-size:19px!important;margin:0 0 10px!important}
+.checkpoint p{font-size:15px;margin:0;line-height:1.7}
+.navigation a:focus-visible,.choices button:focus-visible{outline:3px solid var(--link);outline-offset:3px}
+@media(max-width:540px){.navigation a{font-size:12px;padding:14px 7px}.explorer{padding:15px}.choices{gap:6px}.choices button{padding:10px 12px}.checkpoint{grid-template-columns:1fr;gap:22px}}

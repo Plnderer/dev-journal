@@ -5,7 +5,7 @@ import { cache } from "react";
 
 export type Post = {
   slug: string; title: string; description: string; author: string;
-  date: string; category: string; content: string; readingMinutes: number;
+  date: string; category: string; content: string; readingMinutes: number; cover?: string;
 };
 const directory = path.join(process.cwd(), "content/posts");
 export const getPosts = cache((): Post[] => fs.readdirSync(directory)
@@ -13,9 +13,12 @@ export const getPosts = cache((): Post[] => fs.readdirSync(directory)
   .flatMap(file => {
     const slug = file.slice(0, -3);
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error(`Invalid post filename: ${file}`);
-    const { data, content } = matter(fs.readFileSync(path.join(directory, file), "utf8"));
+    const { data, content } = matter<{
+      title: string; description: string; author: string; date: string;
+      category: string; draft?: boolean; cover?: unknown;
+    }>(fs.readFileSync(path.join(directory, file), "utf8"));
     if (data.draft === true) return [];
-    for (const field of ["title", "description", "author", "date", "category"]) {
+    for (const field of ["title", "description", "author", "date", "category"] as const) {
       if (typeof data[field] !== "string" || !data[field].trim()) throw new Error(`${file}: missing ${field}`);
     }
     const timestamp = Date.parse(`${data.date}T12:00:00Z`);
@@ -23,6 +26,7 @@ export const getPosts = cache((): Post[] => fs.readdirSync(directory)
       new Date(timestamp).toISOString().slice(0, 10) !== data.date) throw new Error(`${file}: invalid date; use quoted YYYY-MM-DD`);
     return [{ slug, title: data.title, description: data.description, author: data.author,
       date: data.date, category: data.category, content,
+      cover: typeof data.cover === "string" && /^\/images\/[a-z0-9-]+\.(webp|png|jpg)$/.test(data.cover) ? data.cover : undefined,
       readingMinutes: Math.max(1, Math.ceil(content.split(/\s+/).length / 200)) }];
   }).sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug)));
 export const getPost = (slug: string) => getPosts().find(post => post.slug === slug);
