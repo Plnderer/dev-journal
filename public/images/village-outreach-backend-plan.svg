@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="660" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+  <title id="title">Village Outreach: proposed backend structure</title>
+  <desc id="desc">The mobile app communicates with the backend API. The API validates input, checks permissions, and reads or writes data. Six planned entities are User, HelpRequest, Offer, Message, Resource, and Report. This is a planning diagram, not a completed implementation.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#a2c5ac"/></marker></defs>
+  <rect width="960" height="660" rx="24" fill="#101b19"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="52" fill="#a2c5ac" font-size="15" letter-spacing="2">VILLAGE OUTREACH / WEEK 3</text>
+    <text x="48" y="96" fill="#faf7f2" font-size="32" font-weight="700">Planning what happens behind the screens</text>
+    <rect x="48" y="130" width="864" height="78" rx="12" fill="#233c32" stroke="#72967e"/>
+    <text x="72" y="163" fill="#faf7f2" font-size="23" font-weight="700">Mobile app</text>
+    <text x="72" y="189" fill="#d0dcd3" font-size="18">Request help, offer support, and find resources</text>
+    <path d="M480 212V253" stroke="#a2c5ac" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="48" y="268" width="864" height="92" rx="12" fill="#243634" stroke="#72967e"/>
+    <text x="72" y="304" fill="#faf7f2" font-size="23" font-weight="700">Backend API</text>
+    <text x="72" y="335" fill="#d0dcd3" font-size="18">Validate input / Check permissions / Read and write data</text>
+    <path d="M480 364V405" stroke="#a2c5ac" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="48" y="420" width="864" height="168" rx="12" fill="#192b27" stroke="#72967e"/>
+    <text x="72" y="454" fill="#faf7f2" font-size="23" font-weight="700">Planned data entities</text>
+    <g fill="#293f35" stroke="#577b63">
+      <rect x="72" y="474" width="252" height="40" rx="8"/><rect x="354" y="474" width="252" height="40" rx="8"/><rect x="636" y="474" width="252" height="40" rx="8"/>
+      <rect x="72" y="530" width="252" height="40" rx="8"/><rect x="354" y="530" width="252" height="40" rx="8"/><rect x="636" y="530" width="252" height="40" rx="8"/>
+    </g>
+    <g fill="#faf7f2" font-size="19" text-anchor="middle">
+      <text x="198" y="501">User</text><text x="480" y="501">HelpRequest</text><text x="762" y="501">Offer</text>
+      <text x="198" y="557">Message</text><text x="480" y="557">Resource</text><text x="762" y="557">Report</text>
+    </g>
+    <text x="48" y="629" fill="#d9b78f" font-size="17">PROPOSED DESIGN / Implementation and testing are next steps.</text>
+  </g>
+</svg>
