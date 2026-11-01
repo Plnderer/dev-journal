@@ -4,6 +4,7 @@ description: "Aligning our sprint, verifying real sign-in, and building profile 
 author: "Eric Reyes"
 date: "2026-10-31"
 category: "Village Outreach"
+cover: "/images/village-outreach-week-5-requests.png"
 draft: false
 ---
 
