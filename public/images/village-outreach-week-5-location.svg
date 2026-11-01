@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 820" role="img" aria-labelledby="title desc">
+  <title id="title">One approximate location throughout the nearby search</title>
+  <desc id="desc">Before: search calculations used the original coordinates while responses rounded them. After: radius filtering, ordering, distance, and responses all use the same approximate coordinates.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="#c0fe04"/></marker>
+  </defs>
+  <rect width="720" height="820" rx="16" fill="#111313"/>
+  <g font-family="Arial, sans-serif">
+    <text x="36" y="49" font-size="18" letter-spacing="2" fill="#c0fe04">VILLAGE OUTREACH / WEEK 5</text>
+    <text x="36" y="100" font-size="32" font-weight="700" fill="#f7f7f2">What does a nearby search reveal?</text>
+    <rect x="28" y="132" width="664" height="252" rx="10" fill="#24212a" stroke="#b9a0ec"/>
+    <text x="52" y="176" font-size="24" font-weight="700" fill="#d4bfff">BEFORE THE FIX</text>
+    <text x="52" y="221" font-size="25" fill="#f7f7f2">Search uses original coordinates</text>
+    <text x="52" y="263" font-size="25" fill="#f7f7f2">Response shows rounded coordinates</text>
+    <path d="M52 288 H668" stroke="#68616f"/>
+    <text x="52" y="328" font-size="23" fill="#ded9e5">Changing the radius could narrow down</text>
+    <text x="52" y="360" font-size="23" fill="#ded9e5">the original location.</text>
+    <path d="M360 399 V435" stroke="#c0fe04" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="28" y="456" width="664" height="272" rx="10" fill="#20271b" stroke="#c0fe04"/>
+    <text x="52" y="500" font-size="24" font-weight="700" fill="#c0fe04">AFTER THE FIX</text>
+    <text x="52" y="545" font-size="25" fill="#f7f7f2">Use one approximate location for:</text>
+    <text x="66" y="590" font-size="25" fill="#f7f7f2">Radius filtering + result ordering</text>
+    <text x="66" y="631" font-size="25" fill="#f7f7f2">Distance + response coordinates</text>
+    <path d="M52 655 H668" stroke="#566641"/>
+    <text x="52" y="697" font-size="23" fill="#e3ead9">Search behavior matches the shared location.</text>
+    <text x="36" y="778" font-size="20" fill="#c3c7be">Regression check: same public location → same distance.</text>
+  </g>
+</svg>
