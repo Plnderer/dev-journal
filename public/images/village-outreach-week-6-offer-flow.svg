@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 690" role="img" aria-labelledby="title description">
+  <title id="title">When a help request opens a conversation</title>
+  <desc id="description">An offer begins pending. The requester accepts one helper, allowing that pair to read and send messages. After closure they can read the history. Other accounts have no chat access at any stage.</desc>
+  <rect width="640" height="690" rx="20" fill="#111313"/>
+  <g font-family="Arial, sans-serif">
+    <text x="34" y="47" fill="#c0fe04" font-size="20" letter-spacing="2">VILLAGE OUTREACH / WEEK 6</text>
+    <text x="34" y="94" fill="#f7f7f2" font-size="35" font-weight="700">Who can use the conversation?</text>
+
+    <path d="M64 181V483" stroke="#68706c" stroke-width="3"/>
+    <path d="m55 245 9 10 9-10m-18 161 9 10 9-10" fill="none" stroke="#c0fe04" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="102" y="122" width="506" height="142" rx="12" fill="#202423" stroke="#68706c"/>
+    <circle cx="64" cy="161" r="25" fill="#202423" stroke="#a8aca9" stroke-width="2"/>
+    <text x="64" y="170" text-anchor="middle" fill="#f7f7f2" font-size="25" font-weight="700">1</text>
+    <text x="126" y="165" fill="#f7f7f2" font-size="28" font-weight="700">Offer pending</text>
+    <text x="126" y="204" fill="#dfe2df" font-size="25">Only the requester can accept.</text>
+    <text x="126" y="238" fill="#dfe2df" font-size="25">Messaging opens after acceptance.</text>
+
+    <rect x="102" y="283" width="506" height="142" rx="12" fill="#252e17" stroke="#c0fe04" stroke-width="2"/>
+    <circle cx="64" cy="322" r="25" fill="#c0fe04"/>
+    <text x="64" y="331" text-anchor="middle" fill="#111313" font-size="25" font-weight="700">2</text>
+    <text x="126" y="326" fill="#e8ffad" font-size="28" font-weight="700">One helper accepted</text>
+    <text x="126" y="365" fill="#f7f7f2" font-size="25">The requester and accepted helper</text>
+    <text x="126" y="399" fill="#f7f7f2" font-size="25">can read and send messages.</text>
+
+    <rect x="102" y="444" width="506" height="142" rx="12" fill="#24212a" stroke="#b9a0ec"/>
+    <circle cx="64" cy="483" r="25" fill="#24212a" stroke="#b9a0ec" stroke-width="2"/>
+    <text x="64" y="492" text-anchor="middle" fill="#f7f7f2" font-size="25" font-weight="700">3</text>
+    <text x="126" y="487" fill="#d4bfff" font-size="28" font-weight="700">Request closed</text>
+    <text x="126" y="526" fill="#f7f7f2" font-size="25">Those two accounts can read the</text>
+    <text x="126" y="560" fill="#f7f7f2" font-size="25">saved conversation. Sending is off.</text>
+
+    <path d="M34 615h574" stroke="#68706c"/>
+    <text x="34" y="650" fill="#dfe2df" font-size="24">Other accounts have no access at any stage.</text>
+  </g>
+</svg>
