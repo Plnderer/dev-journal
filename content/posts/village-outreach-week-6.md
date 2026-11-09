@@ -4,6 +4,7 @@ description: "How I connected helper offers and private messaging in Village Out
 author: "Eric Reyes"
 date: "2026-11-08"
 category: "Village Outreach"
+cover: "/images/village-outreach-week-6-conversation.webp"
 draft: false
 ---
 
